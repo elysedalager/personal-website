@@ -63,6 +63,48 @@
     padding-top: .5em; /* Adds spacing on top of image relative to parent element font size (.5x) */
 }
 
+/* Name and site/resume links */
+h1, p {
+    margin: .3em; /* Defines space on all four sides of the element relative to parent element font size to let the text breathe (.3x) */
+    color: #282c34; /* Sets color of text to a dark grayish-blue */
+}
+
+/* Name */
+h1 {
+    font-weight: 600; /* Changes font weight of element to 600 (default of h1 is 700) */
+    font-size: 2.3em; /* Sets font size relative to parent element font size (2.3x) */
+}
+
+/* Site/resume links */
+p {
+    font-size: 1em; /* Sets the font size equal to parent element font size */
+}
+
+/* Anchor on the site/resume links */
+a {
+    color: #282c34; /* Sets color of anchor to a dark grayish-blue */
+    text-decoration: none; /* Removes the text decoration (purple highlight and underline) from text with links */
+}
+
+/* Anchor hover styling */
+a:hover {
+    text-decoration: underline; /* Underlines content on hover from mouse */
+}
+
+/* This styling is applied to any photo that has the class="spaced" attribute (site/resume links) */
+.spaced {
+    margin: 0 .5em; /* Applies a 0 margin to top and bottom of element, .5em margin on left and right sides of element */
+}
+
+/* Coming soon text on bottom left corner of page */
+h3 {
+    font-weight: 200; /* Changes font weight of element to 200 (default of h3 is 400) */
+    font-size: 1em; /* Sets font size relative to parent element font size (.6x) */
+    color: floralwhite; /* Sets the color to snow */
+    text-align: left; /* Aligns inline and inline-block elements to the left */
+    padding-left: 1em; /* Adds spacing to the left of element equal to parent element font size */
+}
+
 /* Link to personal projects page */
 .personal-projects-nav {
     text-align: left; /* Aligns inline and inline-block elements to the left */
@@ -105,46 +147,4 @@
 .photo3 {
     transform: translate(-50%, -50%) rotate(15deg); /* Moves the element 50% of its width to the left and 50% of its height upwards - tilts photo 3 to the right */
     z-index: 3; /* Place it above photo 2 */
-}
-
-/* Name and site/resume links */
-h1, p {
-    margin: .2em; /* Defines space on all four sides of the element relative to parent element font size to let the text breathe (.3x) */
-    color: #282c34; /* Sets color of text to a dark grayish-blue */
-}
-
-/* Name */
-h1 {
-    font-weight: 600; /* Changes font weight of element to 600 (default of h1 is 700) */
-    font-size: 2.3em; /* Sets font size relative to parent element font size (2.3x) */
-}
-
-/* Site/resume links */
-p {
-    font-size: 1em; /* Sets the font size equal to parent element font size */
-}
-
-/* Anchor on the site/resume links */
-a {
-    color: #282c34; /* Sets color of anchor to a dark grayish-blue */
-    text-decoration: none; /* Removes the text decoration (purple highlight and underline) from text with links */
-}
-
-/* Anchor hover styling */
-a:hover {
-    text-decoration: underline; /* Underlines content on hover from mouse */
-}
-
-/* This styling is applied to any photo that has the class="spaced" attribute (site/resume links) */
-.spaced {
-    margin: 0 .5em; /* Applies a 0 margin to top and bottom of element, .5em margin on left and right sides of element */
-}
-
-/* Coming soon text on bottom left corner of page */
-h3 {
-    font-weight: 200; /* Changes font weight of element to 200 (default of h3 is 400) */
-    font-size: .6em; /* Sets font size relative to parent element font size (.6x) */
-    color: snow; /* Sets the color to snow */
-    text-align: left; /* Aligns inline and inline-block elements to the left */
-    padding-left: 1em; /* Adds spacing to the left of element equal to parent element font size */
 }
