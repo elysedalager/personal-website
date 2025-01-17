@@ -1,128 +1,150 @@
+
+/* Entire application */
 .Home {
-    /*min-height: 135vh; !* Extend the height beyond the viewport *!*/
-    min-height: 100vh;
-    overflow: hidden; /* Hide scrollbars */
-    position: relative; /* Make it relative for absolute positioning of child elements */
+    /*min-height: 135vh; !* Extend the height beyond the viewport for pages *!*/
+    min-height: 100vh; /* Ensures container is at least full height of viewport - no scrolling */
+    overflow: hidden; /* Hides content that overflows the containers boundaries */
+    position: relative; /* Makes the container a reference point for any absolute positioned child elements */
 
-    text-align: center; /* Centers text inside the div */
-    font-family: 'Crimson Text';
+    text-align: center; /* Centers inline and inline-block elements horizontally inside the div (duh) */
+    font-family: 'Crimson Text'; /* Sets font inside the container (anotha duh) */
 
-    display: flex;
-    flex-direction: column; /* Ensures content flows from top to bottom */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    display: flex; /* Turns container into a flexbox, enabling layout properties like the following.. */
+    flex-direction: column; /* Stacks child elements vertically */
+    justify-content: center; /* Centers child elements vertically within container along main axis */
+    align-items: center; /* Centers child elements horizontally along cross-axis (perpendicular to main axis) */
 }
 
-.home-banner {
-    background-color: rgba(255, 250, 250, .8);
-    padding: 1em;
-    /*margin-top: 13vh;*/
-    width: 100%;
-    position: relative; /* Keeps the HomeContent positioned inside the Home section */
-    z-index: 1; /* Ensure it's on top of the background image */
-}
-
-.coming-soon {
-    width: 100%;
-    /*padding: 1em;*/
-    position: absolute; /* Allow positioning relative to the parent container */
-    bottom: 0; /* Position the div at the bottom of the page */
-}
-
-/*.home-pages {*/
-/*    display: flex; !* Use flexbox for layout *!*/
-/*    justify-content: space-between; !* Space out the nav sections *!*/
-/*    align-items: center; !* Center the nav sections vertically *!*/
-/*    margin-top: 19em; !* Adjust as needed *!*/
-/*    width: 100%; !* Ensure the container spans the full width *!*/
-/*    padding: 1em; !* Add padding for spacing *!*/
-/*}*/
-
+/* Photo used as the background for website Home */
 .background-image {
-    position: absolute; /* Position the image */
-    top: 0;
-    left : 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
-    opacity: .80;
-    z-index: -1; /* Make sure the image stays behind the text */
+    position: absolute; /* Positions element absolutely within parent container (Home) - it won't affect or be affected by the positioning of sibling elements */
+    top: 0; /* Positions top edge of element 0 units from top edge of its parent container (Home) */
+    left : 0; /* Positions left edge of element 0 units from left edge of its parent container (Home) */
+    width: 100%; /* Ensures element spans full width of container (image needs to cover the whole background */
+    height: 100%; /* Ensures element spans full height of container (image needs to cover the whole background */
+    object-fit: cover; /* Ensures the background image fills the container while maintaining its aspect ratio */
+    opacity: .80; /* Sets background image's transparency to 80% visibility */
+    z-index: -1; /* Sets stacking order of the element - ensures it's behind all other elements (high to low z indexes) */
 }
 
+/* Main content on homepage, looks like a banner */
+.home-banner {
+    background-color: rgba(255, 250, 250, .8); /* Specifies banner color with Red, Green, Blue, Alpha value (opacity) */
+    padding: 1em; /* Adds spacing inside element - gives text some room to breathe */
+    /*margin-top: 13vh;*/ /* Adds vertical space above the element to center within viewport */
+    width: 100%; /* Ensures element spans full width of container to look banner-like */
+    position: relative; /* Positions it relative to its normal position - child elements with absolute positioning are based on this element */
+    z-index: 1; /* Sets stacking order of the element - ensures it's on top of the background image (high to low z indexes) */
+}
+
+/* Small coming soon text to indicate site is under small construction */
+.coming-soon {
+    width: 100%; /* Ensures element spans full width of container */
+    position: absolute; /* Positions element absolutely within parent container (Home) - it won't affect or be affected by the positioning of sibling elements */
+    bottom: 0; /* Positions bottom edge of element 0 units from bottom edge of its parent container (Home) */
+}
+
+/* Additional pages available for navigation within the website */
+.home-pages {
+    margin-top: 19em; /* Adds vertical space above the element to move below viewport and away from banner */
+    width: 100%; /* Ensures element spans full width of container */
+    padding: 1em; /* Adds spacing inside element - gives each set of photos room to breathe */
+
+    display: flex; /* Turns container into a flexbox, enabling layout properties like the following.. */
+    justify-content: space-between; /* Centers child elements vertically within container along main axis */
+    align-items: center; /* Centers child elements horizontally along cross-axis (perpendicular to main axis) */
+}
+
+/* Circular photo of me! */
 .profile-image {
-    height: 11em;
-    border-radius: 50%;
-    opacity: 0.90;
-    padding-top: .5em;
+    height: 11em; /* Sets height of image relative to parent element font size(11x) */
+    border-radius: 50%; /* Rounds the corners of the image into a perfect circle */
+    opacity: 0.90; /* Sets background image's transparency to 90% visibility */
+    padding-top: .5em; /* Adds spacing on top of image relative to parent element font size (.5x) */
 }
 
-/*.personal-projects-nav {*/
-/*    text-align: left; !* Align content to the left *!*/
-/*    flex: 1; !* Allow this section to take up space proportionally *!*/
-/*}*/
+/* Link to personal projects page */
+.personal-projects-nav {
+    text-align: left; /* Aligns inline and inline-block elements to the left */
+    flex: 1; /* The element will expand to fill available space within the parent container - content inside will flexibly adjust based on remaining space */
+}
 
-/*.hobbies-nav {*/
-/*    text-align: center; !* Align content to the center *!*/
-/*    flex: 1; !* Allow this section to take up space proportionally *!*/
-/*}*/
+/* Link to recreational page */
+.recreational-nav {
+    text-align: center; /* Centers inline and inline-block elements horizontally inside the div */
+    flex: 1; /* The element will expand to fill available space within the parent container - content inside will flexibly adjust based on remaining space */
+}
 
-/*.volunteer-nav {*/
-/*    text-align: right; !* Align content to the right *!*/
-/*    flex: 1; !* Allow this section to take up space proportionally *!*/
-/*}*/
+/* Link to volunteer page */
+.volunteer-nav {
+    text-align: right; /* Aligns inline and inline-block elements to the right */
+    flex: 1; /* The element will expand to fill available space within the parent container - content inside will flexibly adjust based on remaining space */
+}
 
-/*.photo {*/
-/*    position: absolute; !* Allows precise positioning *!*/
-/*    height: 11em; !* Set consistent height matching your profile photo *!*/
-/*    transition: transform 0.3s ease; !* Add smooth transition effect *!!*margin: 0 auto; !* Center the photo within its container *!*!*/
-/*}*/
+/* This styling is applied to any photo that has the class="photo" attribute (pages photos) */
+.photo {
+    position: absolute; /* Positions element absolutely within parent container (respective pages) - it won't affect or be affected by the positioning of sibling elements */
+    height: 11em; /* Sets height of image relative to parent element font size (11x) */
+    transition: transform 0.3s ease; /* Add smooth transition effect to transform property over 0.3 seconds with an ease timing function */
+    /*margin: 0 auto; !* Center the .photo element horizontally within its container by setting the left and right margins to auto *!*/
+}
 
-/*.photo1 {*/
-/*    transform: translate(-50%, -50%) rotate(-15deg); !* Tilt photo 1 to the left *!*/
-/*    z-index: 1; !* Place it behind the others *!*/
-/*}*/
+/* Photo 1 in the photo stack for the pages */
+.photo1 {
+    transform: translate(-50%, -50%) rotate(-15deg); /* Moves the element 50% of its width to the left and 50% of its height upwards - tilts photo 1 to the left */
+    z-index: 1; /* Place it behind the others but in front of background image */
+}
 
-/*.photo2 {*/
-/*    transform: translate(-50%, -50%) rotate(0deg); !* Keep photo 2 straight *!*/
-/*    z-index: 2; !* Place it above photo 1 *!*/
-/*}*/
+/* Photo 2 in the photo stack for the pages */
+.photo2 {
+    transform: translate(-50%, -50%) rotate(0deg); /* Moves the element 50% of its width to the left and 50% of its height upwards - keeps photo 2 straight */
+    z-index: 2; /* Place it above photo 1 */
+}
 
-/*.photo3 {*/
-/*    transform: translate(-50%, -50%) rotate(15deg); !* Tilt photo 3 to the right *!*/
-/*    z-index: 3; !* Place it above the others *!*/
-/*}*/
+/* Photo 3 in the photo stack for the pages */
+.photo3 {
+    transform: translate(-50%, -50%) rotate(15deg); /* Moves the element 50% of its width to the left and 50% of its height upwards - tilts photo 3 to the right */
+    z-index: 3; /* Place it above photo 2 */
+}
 
+/* Name and site/resume links */
 h1, p {
-    margin: .3em;
-    color: #282c34;
+    margin: .2em; /* Defines space on all four sides of the element relative to parent element font size to let the text breathe (.3x) */
+    color: #282c34; /* Sets color of text to a dark grayish-blue */
 }
 
+/* Name */
 h1 {
-    font-weight: 600;
-    font-size: 2.3em;
+    font-weight: 600; /* Changes font weight of element to 600 (default of h1 is 700) */
+    font-size: 2.3em; /* Sets font size relative to parent element font size (2.3x) */
 }
 
+/* Site/resume links */
 p {
-    font-size: 1em;
+    font-size: 1em; /* Sets the font size equal to parent element font size */
 }
 
+/* Anchor on the site/resume links */
 a {
-    color: #282c34;
-    text-decoration: none;
+    color: #282c34; /* Sets color of anchor to a dark grayish-blue */
+    text-decoration: none; /* Removes the text decoration (purple highlight and underline) from text with links */
 }
 
+/* Anchor hover styling */
 a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; /* Underlines content on hover from mouse */
 }
 
+/* This styling is applied to any photo that has the class="spaced" attribute (site/resume links) */
 .spaced {
-    margin: 0 .5em;
+    margin: 0 .5em; /* Applies a 0 margin to top and bottom of element, .5em margin on left and right sides of element */
 }
 
+/* Coming soon text on bottom left corner of page */
 h3 {
-    font-weight: 200;
-    font-size: .6em;
-    color: snow;
-    text-align: left;
-    padding-left: 1em;
+    font-weight: 200; /* Changes font weight of element to 200 (default of h3 is 400) */
+    font-size: .6em; /* Sets font size relative to parent element font size (.6x) */
+    color: snow; /* Sets the color to snow */
+    text-align: left; /* Aligns inline and inline-block elements to the left */
+    padding-left: 1em; /* Adds spacing to the left of element equal to parent element font size */
 }

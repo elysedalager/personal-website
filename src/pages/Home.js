@@ -37,7 +37,7 @@ function Home() {
                 {/*        <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>*/}
                 {/*        <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>*/}
                 {/*    </div>*/}
-                {/*    <div className="hobbies-nav">*/}
+                {/*    <div className="recreational-nav">*/}
                 {/*        <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>*/}
                 {/*        <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>*/}
                 {/*        <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>*/}
