@@ -29,10 +29,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="/static/css/main.[hash].css" rel="stylesheet">
+    <!--
+    The [hash] will be replaced with a unique identifier for your generated CSS file.
+    This allows the browser to correctly load the most up-to-date version.
+    -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="/static/js/main.[hash].js"></script>
+    <!--
+    This will link to the main JavaScript file generated during the build process.
+    -->
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
