@@ -5,19 +5,19 @@ function Home() {
 
     const homePages = (<div className="home-pages">
         <div className="personal-projects-nav">
-            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
-            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
-            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+            <img src="/homebackground.jpg" alt="1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="3" className="photo photo3"/>
         </div>
         <div className="recreational-nav">
-            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
-            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
-            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+            <img src="/homebackground.jpg" alt="1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="3" className="photo photo3"/>
         </div>
         <div className="volunteer-nav">
-            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
-            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
-            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+            <img src="/homebackground.jpg" alt="1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="3" className="photo photo3"/>
         </div>
     </div>);
 
@@ -40,7 +40,7 @@ function Home() {
                             GitHub
                         </a>
                         <span className="spaced">|</span>
-                        <a className="spaced" href="/Elyse Dalager Resume.pdf" target="_blank"
+                        <a className="spaced" href="/Elyse Dalager Resume - Revised.pdf" target="_blank"
                            rel="noopener noreferrer">
                             Resume
                         </a>
