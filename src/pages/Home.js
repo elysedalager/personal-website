@@ -3,6 +3,24 @@ import './Home.css';
 
 function Home() {
 
+    const homePages = (<div className="home-pages">
+        <div className="personal-projects-nav">
+            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+        </div>
+        <div className="recreational-nav">
+            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+        </div>
+        <div className="volunteer-nav">
+            <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>
+            <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>
+            <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>
+        </div>
+    </div>);
+
     return (
         <>
             <div className="Home">
@@ -31,23 +49,7 @@ function Home() {
                 <div className="coming-soon">
                     <h3>COMING SOON: Personal Projects, Recreational, Volunteer pages</h3>
                 </div>
-                {/*<div className="home-pages">*/}
-                {/*    <div className="personal-projects-nav">*/}
-                {/*        <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>*/}
-                {/*        <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>*/}
-                {/*        <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>*/}
-                {/*    </div>*/}
-                {/*    <div className="recreational-nav">*/}
-                {/*        <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>*/}
-                {/*        <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>*/}
-                {/*        <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>*/}
-                {/*    </div>*/}
-                {/*    <div className="volunteer-nav">*/}
-                {/*        <img src="/homebackground.jpg" alt="Photo 1" className="photo photo1"/>*/}
-                {/*        <img src="/homebackground2.jpg" alt="Photo 2" className="photo photo2"/>*/}
-                {/*        <img src="/homebackground3.jpg" alt="Photo 3" className="photo photo3"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                {/*{homePages}*/ /* Commnented out while the construction of these pages are still in progress */}
             </div>
         </>
     );
