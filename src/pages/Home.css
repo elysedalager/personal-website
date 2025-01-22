@@ -42,6 +42,7 @@
     width: 100%; /* Ensures element spans full width of container */
     position: absolute; /* Positions element absolutely within parent container (Home) - it won't affect or be affected by the positioning of sibling elements */
     bottom: 0; /* Positions bottom edge of element 0 units from bottom edge of its parent container (Home) */
+    font-size: .70em; /* Sets font size relative to parent element font size (.7x) */
 }
 
 /* Additional pages available for navigation within the website */
