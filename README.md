@@ -3,4 +3,4 @@
 You may find up-to-date content here:
 -  [LinkedIn](https://www.linkedin.com/in/elysedalager/)
 - [GitHub](https://github.com/elysedalager)
-- [Resume](public/Elyse-Dalager-Resume.pdf)
+- [Resume](/public/Elyse Dalager Resume.pdf)
