@@ -21,7 +21,7 @@ function Home() {
                             GitHub
                         </a>
                         <span className="spaced">|</span>
-                        <a className="spaced" href="/Elyse Dalager Resume - Revised.pdf" target="_blank"
+                        <a className="spaced" href="/Elyse Dalager Resume.pdf" target="_blank"
                            rel="noopener noreferrer">
                             Resume
                         </a>
